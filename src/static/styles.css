@@ -63,6 +63,11 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+}
+
+.activity-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .activity-card h4 {
@@ -72,6 +77,77 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.participants-section h5 {
+  color: #1a237e;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participants-section h5::before {
+  content: "👥";
+  font-size: 1.1em;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.participants-list li {
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  background-color: #e3f2fd;
+  border-left: 3px solid #1a237e;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: #424242;
+  transition: background-color 0.2s ease;
+}
+
+.participants-list li:hover {
+  background-color: #bbdefb;
+}
+
+.participants-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #d32f2f;
+  font-size: 1.1em;
+  padding: 4px;
+  transition: color 0.2s ease;
+  user-select: none;
+}
+
+.delete-icon:hover {
+  color: #b71c1c;
+  transform: scale(1.2);
+}
+
+.no-participants {
+  color: #999;
+  font-style: italic;
+  font-size: 0.9em;
+  padding: 8px 12px;
+  background-color: #fafafa;
+  border-radius: 3px;
 }
 
 .form-group {
